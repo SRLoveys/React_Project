@@ -18,9 +18,9 @@ function NavBar() {
   );
 }
 
-function Movie (name, year, rating) {
+function Movie (props) {
   return (
-    name, year, rating
+    props.name, props.year, props.rating
   )
 }
 
@@ -29,7 +29,6 @@ function MovieList () {
 }
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return <>
   <NavBar />
